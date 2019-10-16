@@ -1,0 +1,21 @@
+<h1>Add product page</h1>
+
+<form action="/add-product" method="POST">
+    <div class="input-field">
+        <input placeholder="Title" name="title" id="title" type="text" class="validate" required>
+        <label for="title">Title</label>
+        <span class="helper-text" data-error="This fiel is mundatory"></span>
+    </div>
+    <div class="input-field">
+        <input placeholder="Description" name="description" id="description" type="text" class="validate" required>
+        <label for="description">Description</label>
+        <span class="helper-text" data-error="This fiel is mundatory"></span>
+    </div>
+    <div class="input-field">
+        <input placeholder="Price" name="price" id="price" type="text" class="validate" required>
+        <label for="price">Price</label>
+        <span class="helper-text" data-error="This fiel is mundatory"></span>
+    </div>
+
+    <button class="btn btn-primary">Add</button>
+</form>

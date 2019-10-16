@@ -1,0 +1,33 @@
+.nav-wrapper {
+    padding: 0 2rem;
+}
+
+.card-image {
+    min-height: 400px;
+    background: #eee;
+}
+
+.price {
+    font-size: 2rem;
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product h1 {
+    margin-bottom: 2rem;
+}
+
+.product .price {
+    font-size: 5rem;
+}
+
+.actions-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

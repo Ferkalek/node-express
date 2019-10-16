@@ -1,0 +1,30 @@
+<h1>Card</h1>
+
+{{#if products.length}}
+    <div id="card">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product name</th>
+                    <th>Cout</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each products}}
+                <tr>
+                    <td>{{title}}</td>
+                    <td>{{count}}</td>
+                    <td>
+                        <button class="btn btn-small js-del-product" data-id={{id}}>Delete</button>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <p>Total price: <span class="price">{{price}}</span></p>
+    </div>
+{{else}}
+    <p>You don't choose any products</p>
+{{/if}}

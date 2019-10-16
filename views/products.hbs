@@ -1,0 +1,32 @@
+<h1>Products page</h1>
+
+{{#if products.length}}
+{{#each products}}
+<div class="row">
+  <div class="col s6 offset-s3">
+    <div class="card">
+      <div class="card-image">
+        <span class="card-title">{{title}}</span>
+      </div>
+      <div class="card-content">
+        <p>{{description}}</p>
+        <h5>Price: <span class="price">{{price}}</span></h5>
+      </div>
+      <div class="card-action actions-toolbar">
+        <div>
+          <a href="/products/{{id}}">More</a>
+          <a href="/products/{{id}}/edit?allow=true">Edit</a>
+        </div>
+
+        <form action="/card/add" method="POST">
+          <input type="hidden" name="id" value={{id}}>
+          <button type="submit" class="btn btn-primary">Add to card</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}
+{{else}}
+<p>Don't have any products</p>
+{{/if}}
